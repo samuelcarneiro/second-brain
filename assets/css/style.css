@@ -1,5 +1,14 @@
+/*
+Paleta de cores
+#252323 texto
+#70798C link :hover
+#DAD2BC 
+#F5F1ED background
+*/
+
 body {
     background-color: #F5F1ED;
+    color: #252323;
 }
 
 .container {
@@ -14,6 +23,12 @@ header {
 
 h1 {
     font-size: 3rem;
+    color: #70798C;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #252323;
 }
 
 a {
@@ -24,7 +39,8 @@ a {
 
 .cards {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
 }
@@ -32,31 +48,35 @@ a {
 .card {
     border: none;
     text-align: center;
-    padding: 0 1rem;
+    width: 15rem;
+    flex-grow: 1;
 }
 
 .card a {
     font-size: 1.3rem;
     display: block; /*Faz com que o link ocupe o card todo*/
     padding: 1rem 0;
-    background-color: #CCC;
+    background-color: #70798C;
+    color: #F5F1ED;
+    border: 1px solid transparent;
     border-radius: .5rem;
 }
 
 .card a:hover {
-    background-color: #70798C;
-    color: #F5F1ED;
+    background-color: #F5F1ED;
+    color: #70798C;
+    border: 1px solid #70798C;
     transition: .3s;
 }
 
 footer {
-    border-top: 1px dashed #DDD;
+    border-top: 2px dashed #70798C;
     text-align: center;
     padding: 1rem 0;
     margin: 0 1rem;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #70798C;
     padding: 0 .5rem;
 }
