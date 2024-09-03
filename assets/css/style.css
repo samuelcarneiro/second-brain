@@ -1,7 +1,3 @@
-body {
-    background-color: #EEE;
-}
-
 .container {
     max-width: 80%;
     background-color: #FFF;
@@ -15,6 +11,12 @@ header {
 
 h1 {
     font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
 }
 
 .cards {
@@ -32,8 +34,6 @@ h1 {
 
 .card a {
     font-size: 1.3rem;
-    text-decoration: none;
-    color: #222;
     display: block; /*Faz com que o link ocupe o card todo*/
     padding: 1rem 0;
     background-color: #ddd;
@@ -41,7 +41,13 @@ h1 {
 }
 
 footer {
-    border-top: 1px dashed #ddd;
+    border-top: 1px dashed #DDD;
     text-align: center;
     padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+footer a:hover {
+    border-bottom: 2px solid #222;
+    padding: 0 .5rem;
 }
