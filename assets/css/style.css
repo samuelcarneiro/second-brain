@@ -107,6 +107,36 @@ ul {
 }
 
 /*Botões antes do footer (voltar/inicio/avancar)*/
+.acoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.btn {
+    border: 1px solid red;
+    flex-basis: 20rem;
+    text-align: center;
+    padding: .5rem 0;
+    border: 2px solid #70798C;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: .3s;
+    scale: 1.1;
+}
+
+.btn-inicio:hover {
+    background-color: #70798C;
+}
+
+.btn-avancar {
+    background-color: #D0FFD6;
+}
 
 footer {
     border-top: 2px dashed #70798C;
