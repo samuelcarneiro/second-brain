@@ -1,18 +1,19 @@
-/*
-Paleta de cores
-#252323 texto
-#70798C link :hover
-#DAD2BC 
-#F5F1ED background
-*/
+:root {
+    --cor-titulos: #003366;
+    --cor-link: #3399FF;
+    --cor-link-hover: #0056A0;
+    --cor-link-bg-hover: #F0F0F0;
+    --cor-bg-card: #FFFFFF;
+    --cor-border-card: #E0E0E0;
+
+}
 
 body {
-    background-color: #F5F1ED;
-    color: #252323;
+    background: #FFF;
 }
 
 h1, h2, .dot {
-    color: #70798C;
+    color: var(--cor-titulos);
 }
 
 header {
@@ -22,7 +23,7 @@ header {
 
 header h1 {
     font-size: 3rem;
-    border-bottom: 2px dashed #70798C;
+    border-bottom: 5px dashed var(--cor-border-card);
     margin-bottom: 1rem;;
 }
 
@@ -43,7 +44,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #252323;
+    color: var(--cor-link);
     cursor: pointer;
 }
 
@@ -52,7 +53,8 @@ ul {
     list-style-type: square;
 }
 
-.home, .disciplina {
+.home,
+.disciplina {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -61,17 +63,6 @@ ul {
 .container {
     max-width: 70%;
     margin: 0 auto;
-}
-
-.basicas,
-.desenvolvimento-programacao {
-    padding: 0 .5rem;
-    border-radius: .5rem;
-    background-color: rgba(0, 0, 0, .03);
-}
-
-.desenvolvimento-programacao {
-    
 }
 
 .cards {
@@ -93,16 +84,16 @@ ul {
     font-size: 1.3rem;
     display: block; /*Faz com que o link ocupe o card todo*/
     padding: 1rem 0;
-    background-color: #70798C;
-    color: #F5F1ED;
-    border: 1px solid transparent;
+    background-color: var(--cor-bg-card);
+    color: var(--cor-link);
+    border: 3px solid var(--cor-border-card);
     border-radius: .5rem;
 }
 
 .card a:hover {
-    background-color: #F5F1ED;
-    color: #70798C;
-    border: 1px solid #70798C;
+    background-color: var(--cor-link-bg-hover);
+    color: var(--cor-link-hover);
+    border: 3px solid var(--cor-border-card);
     transition: .3s;
 }
 
@@ -116,36 +107,35 @@ ul {
 }
 
 .btn {
-    border: 1px solid red;
+    font-weight: bold;
     flex-basis: 20rem;
     text-align: center;
     padding: .5rem 0;
-    border: 2px solid #70798C;
-    border-radius: .5rem;
     cursor: pointer;
+    border: 3px solid var(--cor-border-card);
+    border-radius: .5rem;
+    background-color: var(--cor-bg-card);
+    color: var(--cor-link);
 }
 
 .btn:hover {
     transition: .3s;
-    scale: 1.1;
-}
-
-.btn-inicio:hover {
-    background-color: #70798C;
+    background-color: var(--cor-link-bg-hover);
+    color: var(--cor-link-hover);
 }
 
 .btn-avancar {
-    background-color: #D0FFD6;
+    background-color: var(--cor-bg-card);
 }
 
 footer {
-    border-top: 2px dashed #70798C;
+    border-top: 5px dashed var(--cor-border-card);
     text-align: center;
     padding: 1rem 0;
-    margin: 0 1rem;
+    margin-top: 2rem;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #70798C;
+    border-bottom: 2px solid var(--cor-border-card);
     padding: 0 .5rem;
 }
