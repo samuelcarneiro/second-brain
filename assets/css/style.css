@@ -11,6 +11,10 @@ body {
     color: #252323;
 }
 
+h1, h2, .dot {
+    color: #70798C;
+}
+
 header {
     padding-top: 1rem;
     text-align: center;
@@ -18,7 +22,6 @@ header {
 
 header h1 {
     font-size: 3rem;
-    color: #70798C;
     border-bottom: 2px dashed #70798C;
     margin-bottom: 1rem;;
 }
@@ -27,8 +30,15 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    color: #70798C;
     margin: 1rem 0;
+}
+
+h3, h4 {
+    margin: 1.5rem 0 .5rem 0;
+}
+
+p {
+    margin: .5rem 0 .5rem 0;
 }
 
 a {
@@ -37,14 +47,19 @@ a {
     cursor: pointer;
 }
 
-main {
+ul {
+    margin-left: 1.5rem;
+    list-style-type: square;
+}
+
+.home, .disciplina {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 .container {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -90,6 +105,8 @@ main {
     border: 1px solid #70798C;
     transition: .3s;
 }
+
+/*Botões antes do footer (voltar/inicio/avancar)*/
 
 footer {
     border-top: 2px dashed #70798C;
